@@ -11,6 +11,8 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { CheckIcon } from '@heroicons/react/20/solid'
+import { useNavigate,NavLink } from 'react-router-dom';
+
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -127,6 +129,7 @@ function classNames(...classes) {
 
 export default function Main() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const navigate = useNavigate();
 
   return (
     <div className="bg-white">
@@ -161,9 +164,11 @@ export default function Main() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <NavLink to="/login_page">
+                <a   className="text-sm font-semibold leading-6 text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
+            </NavLink>
           </div>
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
