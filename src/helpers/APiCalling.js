@@ -3,7 +3,7 @@ import axios from 'axios';
 import { decrypt, encrypt } from './encryption_decryption';
 
 // Define your API base URL here
-const BASE_URL = 'https://atozapp-server.onrender.com/'; // Replace with your API URL
+const BASE_URL = 'https://menu-king-backend.onrender.com/'; // Replace with your API URL
 
 // Create a reusable axios instance with a base URL
 const api = axios.create({
