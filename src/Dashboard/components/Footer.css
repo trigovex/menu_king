@@ -1,0 +1,67 @@
+.footer {
+    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2022/11/08/Lavender-Gradient-Background-45491138-1-312x208.png'); /* Image background */
+    background-size: cover; /* Cover the entire footer */
+    background-position: center; /* Center the image */
+    color: white;
+    margin-top: 50px; /* Initial space to separate from top */
+    padding: 20px 0; /* Default padding */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.footer h5 {
+    font-weight: 600; /* Stronger font weight for headings */
+}
+
+.footer p, .footer ul {
+    font-weight: 300;
+    color: white;
+}
+
+.footer ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+/* Add padding for the Services and Quick Links sections */
+.footer .col-md-3 {
+    padding-left: 20px; /* Add left padding to the sections */
+}
+
+.footer .list-unstyled li {
+    padding-left: 10px; /* Add padding to the left of list items */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) { /* Tablet and mobile view */
+    .footer {
+        margin-top: 100px; /* Increase margin-top for tablet view */
+        padding: 30px 0; /* Adjust padding for a more spacious look */
+    }
+
+    .footer .row {
+        text-align: center; /* Center text for smaller screens */
+    }
+    
+    .footer .col-md-3 {
+        margin-bottom: 20px; /* Add spacing between sections */
+        padding-left: 0; /* Remove left padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) { /* Mobile view */
+    .footer .row {
+        flex-direction: column; /* Stack columns */
+    }
+
+    .footer .col-md-3 {
+        text-align: center; /* Center text in mobile view */
+    }
+
+    .footer p, .footer ul {
+        text-align: center; /* Center align paragraphs and lists */
+    }
+
+    .footer .text-center {
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,78 @@
+/* Timeline.css */
+
+/* Responsive image for smaller screens */
+@media (max-width: 768px) {
+    .text-center img {
+        max-width: 100%; /* Makes sure the image does not exceed the container's width */
+        height: auto;    /* Maintains the aspect ratio */
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-left: 20px;
+    border-left: 3px solid #bef5e0;
+}
+
+.timeline .event {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline .event .circle {
+    position: absolute;
+    left: -51px; /* Adjusted to ensure the line goes through the center */
+    top: 0;
+    background-color: #ae87e1;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    z-index: 1; /* Ensures the dot is on top of the line */
+}
+
+.img-fluid {
+    max-width: 150%; /* Increase the maximum width of the image */
+    height: auto;    /* Maintain aspect ratio */
+    animation: zoom 2s infinite; /* Continuous zoom animation */
+}
+
+/* Keyframes for zoom effect */
+@keyframes zoom {
+    0% {
+        transform: scale(1); /* Start at normal size */
+    }
+    50% {
+        transform: scale(1.05); /* Scale up at halfway */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+    }
+}
+
+.check-icon {
+    width: 20px; /* Width of the check icon */
+    height: 20px; /* Height of the check icon */
+    margin-right: 8px; /* Space between icon and text */
+    vertical-align: middle; /* Align with text */
+}
+
+.timeline .event .title {
+    font-weight: bold;
+    color: #ae87e1;
+    font-size: 1.4rem;
+}
+
+.timeline .event .icon {
+    margin-right: 5px;
+}
+
+.timeline .event p {
+    margin: 0;
+    color: black;
+    font-size: 1.1rem;
+}

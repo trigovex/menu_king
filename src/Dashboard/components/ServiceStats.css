@@ -1,0 +1,34 @@
+/* ServiceStats.css */
+.stat-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .stat-icon {
+    max-width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .stat-value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .stat-label {
+    color: #555;
+  }
+  
+  /* Media Queries for Mobile View */
+  @media (max-width: 768px) {
+    .container {
+      padding-top: 220px;
+      padding-left: 60px;
+    }
+  }

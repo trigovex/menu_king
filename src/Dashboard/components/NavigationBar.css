@@ -1,0 +1,96 @@
+/* Styling for the navbar */
+.navbar {
+    padding: 0.7rem; /* Reduce vertical padding */
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  
+  /* Logo adjustments */
+  .navbar-logo {
+    height: 70px; /* Adjust the height as needed */
+    width: 350px; /* Maintain aspect ratio */
+  }
+  
+  /* Brand styling */
+  .navbar-brand {
+    font-size: 3.5rem;
+    font-weight: 600; /* Adjust font size for brand */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+  }
+  
+  /* Menu items styling */
+  .nav-link {
+    color: black !important; /* Ensure links are black */
+    padding: 0.5rem 1rem; /* Adjust padding for links */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+  
+  .nav-link:hover {
+    background-color: #6b4f99; /* Background color on hover */
+    color: white !important; /* Ensure text color is white */
+  }
+  
+  /* Contact Us button styling */
+  .btn-danger {
+    background-color: #885cb8 !important; /* Custom button color */
+    color: white; /* Set text color */
+    padding: 0.5rem 1rem; /* Adjust button padding */
+    font-size: 1.2rem; /* Increase font size */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    border: none; /* Remove default border */
+    width: 150px; /* Set a fixed width (adjust as needed) */
+    /* Alternatively, use the following for full width: */
+    /* width: 100%; */
+}
+
+.btn-danger:hover {
+    background-color: #6b4f99 !important; /* Darken color on hover */
+}
+
+
+  
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.9rem; /* Increase navbar padding for mobile */
+        height: 100px; /* Set a fixed height for the navbar */
+    }
+
+    .navbar-logo {
+        height: 50px; /* Increase logo size for mobile */
+        width: auto; /* Maintain aspect ratio */
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem; /* Larger font size for mobile */
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem; /* Increased padding for links */
+        font-size: 1rem; /* Larger font size for links */
+    }
+
+    .btn-danger {
+        padding: 0.5rem 1rem; /* Maintain button padding */
+        display: block; /* Ensure Contact Us button is visible in mobile */
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack links vertically on mobile */
+        align-items: flex-start; /* Align links to the left */
+        width: 100%; /* Make navbar full width */
+    }
+
+    .nav-item {
+        width: 100%; /* Make each item full width */
+    }
+
+    .nav-link {
+        text-align: left; /* Align text to the left */
+        width: 100%; /* Make link full width */
+    }
+}
+
+  
